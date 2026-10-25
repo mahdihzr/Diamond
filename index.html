@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>منوی کافه دیاموند</title>
+  <meta name="description" content="منوی دیجیتال کافه دیاموند — قهوه، چای و نوشیدنی‌های گرم و سرد">
+  <meta name="theme-color" content="#0d0c0b">
+  <meta property="og:title" content="منوی کافه دیاموند">
+  <meta property="og:description" content="منوی دیجیتال کافه دیاموند">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 100'%3E%3Cpath d='M30 10h60l25 28-55 54L5 38z' fill='%23e9b949'/%3E%3Cpath d='M5 38h110M60 10 42 38l18 54 18-54z' fill='none' stroke='%230d0c0b' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <svg class="gem" viewBox="0 0 120 100" aria-hidden="true">
+      <defs>
+        <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#fbe9ae"/>
+          <stop offset=".5" stop-color="#e9b949"/>
+          <stop offset="1" stop-color="#9c6a17"/>
+        </linearGradient>
+      </defs>
+      <path d="M30 10h60l25 28-55 54L5 38z" fill="rgba(233,185,73,.10)" stroke="url(#gold)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M5 38h110M60 10 42 38l18 54 18-54zM30 10l12 28M90 10 78 38" fill="none" stroke="url(#gold)" stroke-width="2" stroke-linejoin="round" opacity=".85"/>
+      <path class="spark s1" d="M104 8v14M97 15h14" stroke="#fbe9ae" stroke-width="2" stroke-linecap="round"/>
+      <path class="spark s2" d="M14 70v10M9 75h10" stroke="#fbe9ae" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <p class="welcome" id="welcome">خوش آمدید</p>
+    <h1 class="brand" id="brand">کافه دیاموند</h1>
+    <p class="latin" id="latin">Diamond Café</p>
+    <p class="tagline" id="tagline"></p>
+
+    <label class="search">
+      <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="جستجو در منو…" autocomplete="off" enterkeyhint="search" aria-label="جستجو در منو">
+    </label>
+  </div>
+</header>
+
+<nav class="nav" id="nav" aria-label="دسته‌بندی منو"><div class="nav-track" id="navTrack"></div></nav>
+
+<main class="wrap" id="app">
+  <noscript><p class="empty">برای دیدن منو لطفاً جاوااسکریپت مرورگر را فعال کنید.</p></noscript>
+</main>
+
+<p class="empty" id="empty" hidden>موردی پیدا نشد 🔍</p>
+
+<footer class="foot" id="foot"></footer>
+
+<script src="menu-data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
